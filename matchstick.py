@@ -19,7 +19,7 @@ else :
         sticksDelete = int(input("Humain : "))
         
         if sticksDelete > nbDeleteSticks or nbDeleteSticks <= 0:
-            print "WARNING : Vous pouvez retirer maximum ",nbDeleteSticks,"allumettes."
+            print("WARNING : Vous pouvez retirer maximum " + nbDeleteSticks + "allumettes.")
             continue
 
         sticks -= sticksDelete 
@@ -29,7 +29,7 @@ else :
             break
 
         iaSticks = random.randint(1, nbDeleteSticks)   
-        print("IA : "), (iaSticks )
+        print ("IA : " + str(iaSticks))
         sticks -= iaSticks
         sticksIA = sticks
         if sticksIA <= 0:
